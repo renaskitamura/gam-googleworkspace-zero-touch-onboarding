@@ -1,11 +1,23 @@
 #!/bin/bash
 
-# Define our files and variables
+#!/bin/bash
+
+# ==========================================
+# USER CONFIGURATION REQUIRED
+# Please update the variables below before running
+# ==========================================
+
 INPUT_FILE="new_volunteers.csv"
 LOG_FILE="onboarding.log"
 TEMPLATE_FILE="email_template.html"
-DOMAIN="taketripsmes.org" 
-ADMIN_EMAIL="renato.kitamuramorao@taketripsmes.org" 
+
+# CHANGE THIS: Your Google Workspace domain (e.g., "company.com")
+DOMAIN="yourdomain.org" 
+
+# CHANGE THIS: The email of the admin account authorized in GAM
+ADMIN_EMAIL="admin@yourdomain.org" 
+
+# ==========================================
 
 # Check if the CSV file exists
 if [ ! -f "$INPUT_FILE" ]; then
