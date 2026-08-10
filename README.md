@@ -15,9 +15,9 @@ This script completely automates the workflow by parsing a CSV data file and exe
 
 ## Key Features
 * **Bulk User Provisioning:** Parses CSV files to create user accounts at scale.
-* **Native Security Integration:** Leverages Google Workspace's native password auto-generation to securely deliver credentials and enforce first-time login resets without exposing passwords in plain text.
+* **Enhanced User Experience:** Uses local cryptographic password generation to populate a styled, custom HTML email—bypassing default plain-text notifications—and requires users to create a new password on first sign-in.
 * **Dynamic RBAC & Space Syncing:** Automatically assigns users to designated Google Groups based on their department, instantly granting access to associated Google Chat Spaces and shared resources.
-* **Custom Credential Delivery:** Utilizes the Gmail API to inject user details into a standardized HTML template, automatically emailing welcome instructions directly to the user's personal inbox.
+* **Custom Credential Delivery:** Utilizes the Gmail API to inject user details into a standardized HTML template, automatically emailing welcome instructions and automatically generated temporary password directly to the user's personal inbox.
 * **Audit Logging:** Appends execution details (timestamps, emails, and group assignments) to a local log file for security auditing and compliance.
 
 ## Technology Stack
